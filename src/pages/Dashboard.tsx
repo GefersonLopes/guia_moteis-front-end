@@ -14,6 +14,7 @@ import { Home } from '../sections/home';
 import { Localizacao } from '../sections/localizacao';
 import { Motel } from '../sections/motel';
 import { Suites } from '../sections/suites';
+import { Contato } from '../sections/contato';
 
 export const Dashboard = () => {
   const { isLoad, loading } = useContext(ContextLogic);
@@ -31,6 +32,7 @@ export const Dashboard = () => {
           <Motel />
           <Cortesia />
           <Localizacao />
+          <Contato />
         </>
       )}
     </>

@@ -27,7 +27,7 @@ export const Navbar_Bootstrap = () => {
           <Navbar.Brand href="#motel">O Motel</Navbar.Brand>
           <Navbar.Brand href="#cortesia">Cortesias</Navbar.Brand>
           <Navbar.Brand href="#localizacao">Localização</Navbar.Brand>
-          <Navbar.Brand href="#localizacao">Contato</Navbar.Brand>
+          <Navbar.Brand href="#contato">Contato</Navbar.Brand>
         </Container>
         <Navbar.Brand href="#suites">
           <Button>Reservas</Button>
@@ -61,7 +61,7 @@ export const Navbar_Bootstrap = () => {
               Localização
             </Dropdown.Item>
             <Dropdown.Divider />
-            <Dropdown.Item href="#localizacao" eventKey="6">
+            <Dropdown.Item href="#contato" eventKey="6">
               Contato
             </Dropdown.Item>
           </DropdownButton>

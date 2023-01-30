@@ -31,6 +31,7 @@ export const MainLocalizacao = styled.main`
     }
 
     img {
+      object-fit: cover;
       @media screen and (min-width: 768px) {
         width: 50%;
         height: 100%;
