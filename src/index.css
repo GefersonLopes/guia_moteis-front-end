@@ -187,6 +187,12 @@ table {
 
 #localizacao {
   background-color: #eeeeee;
+  height: 130vh;
+}
+@media screen and (min-width: 768px) {
+  #localizacao {
+    height: 70vh;
+  }
 }
 
 /* Configurações do scroll do body */
