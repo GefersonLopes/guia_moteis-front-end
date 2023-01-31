@@ -14,20 +14,21 @@ export const CardImg = styled.div`
   }
 
   .container {
+    position: relative;
     width: 100vw;
     height: 60vh;
     padding: 0;
     @media screen and (min-width: 768px) {
-      width: 80%;
+      padding: 5rem;
     }
   }
 
   .gallery-wrapper {
     width: 100%;
     margin: 0 auto;
-    @media screen and (min-width: 768px) {
+    /* @media screen and (min-width: 768px) {
       width: 80%;
-    }
+    } */
   }
 
   .arrow-left,
@@ -65,7 +66,6 @@ export const CardImg = styled.div`
   }
 
   .gallery {
-    position: relative;
     width: 85%;
     margin: 0 auto;
     display: flex;
@@ -85,8 +85,8 @@ export const CardImg = styled.div`
 
     @media screen and (min-width: 768px) {
       display: initial;
-      width: 250px;
-      height: 250px;
+      width: 20vw;
+      height: 20vh;
     }
   }
 
@@ -99,7 +99,8 @@ export const CardImg = styled.div`
 
     @media screen and (min-width: 768px) {
       width: 50vw;
-      height: 50vh;
+      height: 40vh;
+      /* align-items: center; */
     }
   }
 
@@ -140,10 +141,14 @@ export const CardImg = styled.div`
     flex-direction: column;
 
     position: absolute;
-    bottom: -15vh;
+    bottom: -5vh;
 
     opacity: 1;
     z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      width: 90vw;
+    }
   }
 
   .card-body {
@@ -153,17 +158,20 @@ export const CardImg = styled.div`
     margin: 0 auto;
 
     background-color: #fff;
-    font {
+    font,
+    p,
+    .h5 {
       color: #000;
     }
 
     @media screen and (min-width: 768px) {
-      width: 65%;
+      width: 40%;
     }
 
     button {
       width: 80%;
-      font {
+      font,
+      p {
         color: #fff;
       }
     }
