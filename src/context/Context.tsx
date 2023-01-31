@@ -9,7 +9,7 @@ export const Context = createContext({} as GlobalInterfaceContext);
 
 export const ContextProvider = ({ children }: INode) => {
   const navigate = useNavigate();
-  const [currentItem, setCurrentItem] = useState(1);
+  const [currentItem, setCurrentItem] = useState(2);
 
   const next = () => {
     const items = document.querySelectorAll('.item');

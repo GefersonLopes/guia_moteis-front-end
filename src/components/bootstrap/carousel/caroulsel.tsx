@@ -47,12 +47,22 @@ export const SuitesCarousel = () => {
             <img
               src={image2}
               alt=""
-              className="item current-item current-item"
+              className="item current-item center-item"
             />
             <img src={image3} alt="" className="item right" />
           </div>
         </div>
       </div>
+      <p
+        style={{
+          textAlign: 'center',
+          marginTop: '2vh',
+          color: '#fff',
+          textDecoration: 'underline',
+        }}
+      >
+        Ver todas as suítes
+      </p>
     </CardImg>
   );
 };

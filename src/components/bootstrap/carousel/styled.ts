@@ -85,7 +85,7 @@ export const CardImg = styled.div`
   }
 
   .item {
-    transition: all 600ms ease-in-out;
+    transition: all 400ms ease-in-out;
     opacity: 0.5;
 
     @media screen and (min-width: 768px) {
@@ -170,15 +170,14 @@ export const CardImg = styled.div`
   }
 
   .card {
-    width: 100vw;
-    height: 12rem;
+    width: 85vw;
+    height: 16rem;
 
     display: flex;
     flex-direction: column;
 
     position: absolute;
     bottom: -20vh;
-    right: 0%;
 
     opacity: 1;
     z-index: 2;
@@ -190,16 +189,22 @@ export const CardImg = styled.div`
   }
 
   .card-body {
-    width: 70%;
+    width: 80%;
     height: 100%;
 
     margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 
     background-color: #fff;
     font,
     p,
     .h5 {
       color: #000;
+      margin: 0;
     }
 
     @media screen and (min-width: 768px) {
