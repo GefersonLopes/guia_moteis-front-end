@@ -19,7 +19,11 @@ export const CardImg = styled.div`
     height: 60vh;
     padding: 0;
     @media screen and (min-width: 768px) {
-      padding: 5rem;
+      padding: 0 10vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -39,7 +43,7 @@ export const CardImg = styled.div`
     margin: 0;
     font-size: 3rem;
     font-weight: 300;
-    z-index: 1;
+    z-index: 3;
 
     display: flex;
     align-items: center;
@@ -58,11 +62,11 @@ export const CardImg = styled.div`
   }
 
   .arrow-left {
-    left: 0;
+    left: 2vh;
   }
 
   .arrow-right {
-    right: 0;
+    right: 2vh;
   }
 
   .gallery {
@@ -81,8 +85,6 @@ export const CardImg = styled.div`
   }
 
   .item {
-    display: none;
-
     transition: all 600ms ease-in-out;
     opacity: 0.5;
 
@@ -98,11 +100,19 @@ export const CardImg = styled.div`
   }
 
   .left {
-    left: 0;
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: initial;
+      left: 1vw;
+    }
   }
 
   .right {
-    right: 0;
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: initial;
+      right: 1vw;
+    }
   }
 
   .current-item {
@@ -117,16 +127,17 @@ export const CardImg = styled.div`
       opacity: 1;
       width: 50vw;
       height: 40vh;
-
-      /* align-items: center; */
     }
   }
 
   .center-item {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @media screen and (min-width: 768px) {
+      display: initial;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   .gallery-wrapper::-webkit-scrollbar {
@@ -165,10 +176,8 @@ export const CardImg = styled.div`
     display: flex;
     flex-direction: column;
 
-    /* position: absolute;
-    bottom: -5vh; */
     position: absolute;
-    bottom: 0%;
+    bottom: -20vh;
     right: 0%;
 
     opacity: 1;
@@ -176,11 +185,12 @@ export const CardImg = styled.div`
 
     @media screen and (min-width: 768px) {
       width: 72vw;
+      bottom: 0%;
     }
   }
 
   .card-body {
-    width: 85%;
+    width: 70%;
     height: 100%;
 
     margin: 0 auto;
