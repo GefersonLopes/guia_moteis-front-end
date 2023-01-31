@@ -43,9 +43,13 @@ export const SuitesCarousel = () => {
                 </Card.Body>
               </Card>
             </div>
-            <img src={image1} alt="" className="item" />
-            <img src={image2} alt="" className="item current-item" />
-            <img src={image3} alt="" className="item" />
+            <img src={image1} alt="" className="item left" />
+            <img
+              src={image2}
+              alt=""
+              className="item current-item current-item"
+            />
+            <img src={image3} alt="" className="item right" />
           </div>
         </div>
       </div>

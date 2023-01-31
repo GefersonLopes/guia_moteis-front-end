@@ -20,7 +20,13 @@ export const ContextProvider = ({ children }: INode) => {
       setCurrentItem(0);
     }
 
-    items.forEach((item) => item.classList.remove('current-item'));
+    items.forEach((item) => {
+      item.classList.remove('current-item');
+      item.classList.remove('current-item');
+      item.classList.remove('center-item');
+      item.classList.remove('left');
+      item.classList.remove('right');
+    });
 
     items[currentItem].scrollIntoView({
       behavior: 'smooth',
@@ -28,6 +34,24 @@ export const ContextProvider = ({ children }: INode) => {
     });
 
     items[currentItem].classList.add('current-item');
+    items[currentItem].classList.add('center-item');
+
+    console.log(items);
+
+    if (currentItem == 0) {
+      items[currentItem + 1].classList.add('left');
+      items[currentItem + 2].classList.add('right');
+    }
+
+    if (currentItem == 1) {
+      items[currentItem - 1].classList.add('left');
+      items[currentItem + 1].classList.add('right');
+    }
+
+    if (currentItem == 2) {
+      items[currentItem - 2].classList.add('left');
+      items[currentItem - 1].classList.add('right');
+    }
   };
 
   const prev = () => {
@@ -39,7 +63,12 @@ export const ContextProvider = ({ children }: INode) => {
       setCurrentItem(2);
     }
 
-    items.forEach((item) => item.classList.remove('current-item'));
+    items.forEach((item) => {
+      item.classList.remove('current-item');
+      item.classList.remove('center-item');
+      item.classList.remove('left');
+      item.classList.remove('right');
+    });
 
     items[currentItem].scrollIntoView({
       behavior: 'smooth',
@@ -47,6 +76,21 @@ export const ContextProvider = ({ children }: INode) => {
     });
 
     items[currentItem].classList.add('current-item');
+
+    if (currentItem == 0) {
+      items[currentItem + 1].classList.add('left');
+      items[currentItem + 2].classList.add('right');
+    }
+
+    if (currentItem == 1) {
+      items[currentItem - 1].classList.add('left');
+      items[currentItem + 1].classList.add('right');
+    }
+
+    if (currentItem == 2) {
+      items[currentItem - 2].classList.add('left');
+      items[currentItem - 1].classList.add('right');
+    }
   };
 
   return (

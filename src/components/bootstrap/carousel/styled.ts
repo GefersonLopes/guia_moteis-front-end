@@ -74,12 +74,15 @@ export const CardImg = styled.div`
       width: 100%;
       overflow: hidden;
       gap: 4vw;
+
+      display: flex;
+      align-items: center;
     }
   }
 
   .item {
     display: none;
-    flex-shrink: 0;
+
     transition: all 600ms ease-in-out;
     opacity: 0.5;
 
@@ -87,21 +90,43 @@ export const CardImg = styled.div`
       display: initial;
       width: 20vw;
       height: 20vh;
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+
   .current-item {
-    display: initial;
     opacity: 1;
     width: 100%;
     height: 70vh;
     object-fit: cover;
+    z-index: 1;
 
     @media screen and (min-width: 768px) {
+      display: initial;
+      opacity: 1;
       width: 50vw;
       height: 40vh;
+
       /* align-items: center; */
     }
+  }
+
+  .center-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .gallery-wrapper::-webkit-scrollbar {
@@ -134,20 +159,23 @@ export const CardImg = styled.div`
   }
 
   .card {
-    width: 100%;
+    width: 100vw;
     height: 12rem;
 
     display: flex;
     flex-direction: column;
 
+    /* position: absolute;
+    bottom: -5vh; */
     position: absolute;
-    bottom: -5vh;
+    bottom: 0%;
+    right: 0%;
 
     opacity: 1;
-    z-index: 1;
+    z-index: 2;
 
     @media screen and (min-width: 768px) {
-      width: 90vw;
+      width: 72vw;
     }
   }
 
@@ -165,7 +193,7 @@ export const CardImg = styled.div`
     }
 
     @media screen and (min-width: 768px) {
-      width: 40%;
+      width: 55%;
     }
 
     button {
