@@ -10,8 +10,12 @@ import image3 from '../img/cortesias/img3.svg';
 
 // import bootstrap
 import Button from 'react-bootstrap/Button';
+import { useContext } from 'react';
+import { ContextLogic } from '../context/Provider';
 
 export const Cortesia = () => {
+  const { noRouter } = useContext(ContextLogic);
+
   return (
     <Page id="cortesia">
       <Center>
@@ -34,7 +38,7 @@ export const Cortesia = () => {
           />
         </Cortesias>
         <a>
-          <Button>Ver todas as cortesias</Button>
+          <Button onClick={() => noRouter()}>Ver todas as cortesias</Button>
         </a>
       </Center>
     </Page>

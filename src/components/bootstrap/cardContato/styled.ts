@@ -64,6 +64,12 @@ export const MainContato = styled.main`
     justify-content: center;
     gap: 2vh;
 
+    .a-brand {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
     @media screen and (min-width: 768px) {
       display: none;
     }

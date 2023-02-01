@@ -8,26 +8,38 @@ import Container from 'react-bootstrap/Container';
 
 //import svg logo
 import logo from '../../../img/svgs/logo.svg';
+import { useContext } from 'react';
+import { ContextLogic } from '../../../context/Provider';
 
 export const CardContato = () => {
+  const { noRouter } = useContext(ContextLogic);
+
   return (
     <MainContato>
       <div className="groupLogo">
-        <img src={logo} alt="" />
+        <img src={logo} alt="logo" />
         <span>
           Rua SPMS, Conj./Lote 175/225 - Núcleo <br /> Bandeirante - Brasília -
           DF
         </span>
       </div>
       <div className="groupButtons">
-        <Button variant="primary">Revervas</Button>
-        <Button variant="primary">Ver suites</Button>
-        <Button variant="outline-primary" className="outline-primary">
-          Whatsapp
-        </Button>
-        <Button variant="outline-primary" className="outline-primary">
-          Contato
-        </Button>
+        <Navbar.Brand className="a-brand" href="#suites">
+          <Button variant="primary">Revervas</Button>
+        </Navbar.Brand>
+        <Navbar.Brand className="a-brand" href="#suites">
+          <Button variant="primary">Ver suites</Button>
+        </Navbar.Brand>
+        <Navbar.Brand className="a-brand" onClick={() => noRouter()}>
+          <Button variant="outline-primary" className="outline-primary">
+            Whatsapp
+          </Button>
+        </Navbar.Brand>
+        <Navbar.Brand className="a-brand" href="#contato">
+          <Button variant="outline-primary" className="outline-primary">
+            Contato
+          </Button>
+        </Navbar.Brand>
       </div>
       <div className="groupNavigate">
         <Container>
@@ -36,7 +48,12 @@ export const CardContato = () => {
           <Navbar.Brand href="#motel">O Motel</Navbar.Brand>
         </Container>
         <Container>
-          <Navbar.Brand>Gastronomia</Navbar.Brand>
+          <Navbar.Brand
+            style={{ cursor: 'pointer' }}
+            onClick={() => noRouter()}
+          >
+            Gastronomia
+          </Navbar.Brand>
           <Navbar.Brand href="#localizacao">Localização</Navbar.Brand>
           <Navbar.Brand href="#suites">Reservas</Navbar.Brand>
         </Container>

@@ -31,6 +31,8 @@ export const Intro = () => {
         <Section>
           <h1>Olá, bem vindo(a) à meu teste</h1>
           <h1>Isto é apenas uma introdução</h1>
+          <h1>Role até em baixo para saber mais</h1>
+          <br />
           <h1>Clique no botão para iniciar</h1>
           <div>
             <ButtonHome onClick={() => navigate('/dashboard')}>
@@ -43,7 +45,7 @@ export const Intro = () => {
         </Section>
         <SectionDown>
           <main id="mainHome">
-            <div>
+            <div className="cardProfile">
               <ul>
                 <li id="profile"></li>
                 <li>

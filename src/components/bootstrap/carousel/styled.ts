@@ -24,6 +24,7 @@ export const CardImg = styled.div`
     bottom: -8vh;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
     @media screen and (min-width: 768px) {
       text-align: 1.25vw;
     }

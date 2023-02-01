@@ -117,4 +117,13 @@ export const SectionDown = styled.section`
       }
     }
   }
+  .cardProfile {
+    height: 60vh;
+    @media screen and (min-width: 768px) {
+      height: 90vh;
+    }
+    ul {
+      padding: 0;
+    }
+  }
 `;

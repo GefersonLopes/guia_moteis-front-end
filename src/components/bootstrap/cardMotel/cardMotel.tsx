@@ -6,8 +6,12 @@ import motel from '../../../img/motel/motel.png';
 
 // import bootstrap
 import Button from 'react-bootstrap/Button';
+import { useContext } from 'react';
+import { ContextLogic } from '../../../context/Provider';
 
 export const CardMotel = () => {
+  const { sobre } = useContext(ContextLogic);
+
   return (
     <DivCentered>
       <CardMotel_Bootstrap>
@@ -28,7 +32,9 @@ export const CardMotel = () => {
             Hospede-se e aproveite ainda nosso delicioso café da manhã, servido
             todos os dias para pernoites!
           </p>
-          <Button>Saiba mais</Button>
+          <a target="_blank" href={sobre}>
+            <Button>Saiba mais</Button>
+          </a>
         </div>
 
         <a>

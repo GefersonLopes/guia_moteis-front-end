@@ -7,8 +7,11 @@ import { MainLocalizacao } from './styled';
 
 //import styled-components
 import mapa from '../../../img/localizacao/mapa.png';
+import { ContextLogic } from '../../../context/Provider';
+import { useContext } from 'react';
 
 export const CardLocalizacao = () => {
+  const { tracarRota } = useContext(ContextLogic);
   return (
     <MainLocalizacao>
       <Card>
@@ -19,7 +22,9 @@ export const CardLocalizacao = () => {
             Avenida Santos Dumont, 5253 <br /> Zona Industrial Norte - Joinville
             - SC
           </Card.Text>
-          <Button variant="primary">Traçar rota</Button>
+          <a target="_blank" href={tracarRota}>
+            <Button variant="primary">Traçar rota</Button>
+          </a>
         </Card.Body>
       </Card>
     </MainLocalizacao>
