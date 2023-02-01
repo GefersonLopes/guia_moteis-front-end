@@ -69,6 +69,7 @@ export const Center = styled.div`
 
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 3vh;
   }
@@ -128,5 +129,9 @@ export const Center = styled.div`
     @media screen and (min-width: 1440px) {
       height: 9vh;
     }
+  }
+
+  ul {
+    padding: 0;
   }
 `;

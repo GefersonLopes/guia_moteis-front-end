@@ -35,9 +35,6 @@ export const CardMotel = () => {
           <img id="imgMotel" src={motel} alt="motel" />
         </a>
       </CardMotel_Bootstrap>
-      {/* <p className="hidden-suites">
-        <span style={{ textAlign: 'center' }}>Ver todas as Suítes</span>
-      </p> */}
     </DivCentered>
   );
 };

@@ -24,6 +24,9 @@ export const CardImg = styled.div`
     bottom: -8vh;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media screen and (min-width: 768px) {
+      text-align: 1.25vw;
+    }
   }
 
   .container {
@@ -277,9 +280,10 @@ export const CardImg = styled.div`
         color: #fff;
       }
       @media screen and (min-width: 768px) {
-        width: 13vw;
+        width: 10vw;
+        height: 4vh;
         font {
-          font-size: 1.25vw;
+          font-size: 0.85vw;
         }
       }
     }

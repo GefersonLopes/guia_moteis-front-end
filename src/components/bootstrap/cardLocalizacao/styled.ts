@@ -27,7 +27,7 @@ export const MainLocalizacao = styled.main`
       flex-direction: row;
 
       width: 90vw;
-      height: 40vh;
+      height: 60vh;
     }
 
     img {
@@ -35,6 +35,7 @@ export const MainLocalizacao = styled.main`
       @media screen and (min-width: 768px) {
         width: 50%;
         height: 100%;
+        object-fit: fill;
       }
     }
 
