@@ -8,6 +8,13 @@ export const CardMotel_Bootstrap = styled.div`
   font-weight: bold;
   gap: 1.5rem;
 
+  h1 {
+    font-size: 2.25rem;
+    @media screen and (min-width: 768px) {
+      font-size: 3vw;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     width: 80vw;
     height: 80vh;
@@ -53,7 +60,7 @@ export const CardMotel_Bootstrap = styled.div`
 
       margin-left: 4vw;
 
-      flex-direction: column;
+      display: flex;
       align-items: center;
       justify-content: center;
 
@@ -65,13 +72,12 @@ export const CardMotel_Bootstrap = styled.div`
       }
 
       @media screen and (min-width: 768px) {
-        width: 24vw;
-        height: 6vh;
-        padding: 1rem;
+        width: 10vw;
+        height: 5vh;
+
         margin-left: 2vw;
-        font-size: 2vw;
+        font-size: 1.2vw;
         font-family: Montserrat;
-        padding: 2rem 0;
       }
     }
   }

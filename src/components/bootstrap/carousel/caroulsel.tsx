@@ -37,8 +37,10 @@ export const SuitesCarousel = () => {
             <div className="cardInfo">
               <Card className="text-center">
                 <Card.Body>
-                  <Card.Title>Suíte Cristal</Card.Title>
-                  <Card.Text>A partir de R$ 164,00</Card.Text>
+                  <div>
+                    <Card.Title>Suíte Cristal</Card.Title>
+                    <Card.Text>A partir de R$ 164,00</Card.Text>
+                  </div>
                   <Button variant="primary">Saiba mais</Button>
                 </Card.Body>
                 <p className="ver">Ver todas as suítes</p>
