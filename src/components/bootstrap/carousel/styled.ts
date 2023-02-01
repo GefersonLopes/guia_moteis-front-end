@@ -1,16 +1,28 @@
 import styled from 'styled-components';
 
 export const CardImg = styled.div`
-  h1 {
-    color: #fff;
-    text-align: center;
-    margin-bottom: 2vh;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    height: 100%;
+    width: 100%;
   }
 
   h1 {
+    color: #fff;
     text-align: center;
-    margin: 1em 0;
-    font-family: sans-serif;
+    margin: 4vh 0 0 0;
+  }
+
+  .ver {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    text-decoration: underline;
+    position: absolute;
+    bottom: -8vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .container {
@@ -20,6 +32,7 @@ export const CardImg = styled.div`
     padding: 0;
     @media screen and (min-width: 768px) {
       padding: 0 10vw;
+      height: 50vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -183,13 +196,20 @@ export const CardImg = styled.div`
     z-index: 2;
 
     @media screen and (min-width: 768px) {
-      width: 72vw;
+      width: 73.5vw;
+      height: 20vh;
       bottom: 0%;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 80vw;
+      height: 25vh;
+      bottom: -10vh;
     }
   }
 
   .card-body {
-    width: 80%;
+    width: 90%;
     height: 100%;
 
     margin: 0 auto;

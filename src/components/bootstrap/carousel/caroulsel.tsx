@@ -41,6 +41,7 @@ export const SuitesCarousel = () => {
                   <Card.Text>A partir de R$ 164,00</Card.Text>
                   <Button variant="primary">Saiba mais</Button>
                 </Card.Body>
+                <p className="ver">Ver todas as suítes</p>
               </Card>
             </div>
             <img src={image1} alt="" className="item left" />
@@ -53,16 +54,6 @@ export const SuitesCarousel = () => {
           </div>
         </div>
       </div>
-      <p
-        style={{
-          textAlign: 'center',
-          marginTop: '2vh',
-          color: '#fff',
-          textDecoration: 'underline',
-        }}
-      >
-        Ver todas as suítes
-      </p>
     </CardImg>
   );
 };

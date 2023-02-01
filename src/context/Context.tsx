@@ -28,11 +28,6 @@ export const ContextProvider = ({ children }: INode) => {
       item.classList.remove('right');
     });
 
-    items[currentItem].scrollIntoView({
-      behavior: 'smooth',
-      inline: 'center',
-    });
-
     items[currentItem].classList.add('current-item');
     items[currentItem].classList.add('center-item');
 
@@ -68,11 +63,6 @@ export const ContextProvider = ({ children }: INode) => {
       item.classList.remove('center-item');
       item.classList.remove('left');
       item.classList.remove('right');
-    });
-
-    items[currentItem].scrollIntoView({
-      behavior: 'smooth',
-      inline: 'center',
     });
 
     items[currentItem].classList.add('current-item');
