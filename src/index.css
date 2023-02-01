@@ -163,7 +163,12 @@ table {
 
 #suites {
   background-color: #7a7266;
-  height: 135vh;
+  height: 100vh;
+}
+@media screen and (min-width: 768px) {
+  #suites {
+    height: 80vh;
+  }
 }
 
 #motel {

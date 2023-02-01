@@ -41,11 +41,16 @@ export const SuitesCarousel = () => {
                   <Card.Text>A partir de R$ 164,00</Card.Text>
                   <Button variant="primary">Saiba mais</Button>
                 </Card.Body>
+                <p className="ver">Ver todas as suítes</p>
               </Card>
             </div>
-            <img src={image1} alt="" className="item" />
-            <img src={image2} alt="" className="item current-item" />
-            <img src={image3} alt="" className="item" />
+            <img src={image1} alt="" className="item left" />
+            <img
+              src={image2}
+              alt=""
+              className="item current-item center-item"
+            />
+            <img src={image3} alt="" className="item right" />
           </div>
         </div>
       </div>
