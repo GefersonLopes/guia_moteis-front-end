@@ -8,7 +8,7 @@ export const Header = styled.header`
   height: 4rem;
 
   @media screen and (min-width: 768px) {
-    top: 3vh;
+    top: 1vh;
     height: 4vh;
   }
 
@@ -38,11 +38,16 @@ export const Header = styled.header`
       @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
+        gap: 1.5vw;
       }
 
       .navbar-brand {
         color: #fff;
         font-size: 2vw;
+
+        @media screen and (min-width: 768px) {
+          font-size: 1.5vw;
+        }
       }
     }
   }
@@ -50,14 +55,10 @@ export const Header = styled.header`
   button {
     background-color: #7a7266;
 
-    width: 6.5rem;
+    width: 7rem;
     height: 3rem;
     border-radius: 0;
     border: #7a7266;
-
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
     font-family: Montserrat;
 
@@ -70,15 +71,16 @@ export const Header = styled.header`
       background-color: #fff;
       color: #000;
 
-      width: 18vw;
-      height: 6vh;
+      width: 14vw;
+      height: 5.25vw;
       font-size: 2vw;
-      font-family: Montserrat;
-      padding: 2rem 0;
-    }
 
-    @media screen and (min-width: 1440px) {
-      height: 8vh;
+      padding: 2rem 0;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
   }
 

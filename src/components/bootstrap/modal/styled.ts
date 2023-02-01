@@ -9,9 +9,35 @@ export const Div = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media screen and (min-width: 768px) {
+    height: 100%;
+  }
+
   .card {
     background-color: transparent;
     border: none;
+
+    @media screen and (min-width: 768px) {
+      width: 80%;
+      height: 70%;
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .card-body {
+    padding: 0;
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   .card-text {
@@ -42,18 +68,23 @@ export const Div = styled.div`
   button {
     background-color: #7a7266;
 
-    width: 6.5rem;
-    height: 3rem;
+    width: 8.45rem;
+    height: 3.2rem;
     border-radius: 0;
     border: #7a7266;
 
     margin-left: 4vw;
 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
     font-family: Montserrat;
+
+    font {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     &:hover {
       transition: 1.25s;
@@ -61,20 +92,24 @@ export const Div = styled.div`
     }
 
     @media screen and (min-width: 768px) {
-      width: 24vw;
-      height: 5.5vh;
+      width: 20vw;
+      height: 5vw;
       margin-left: 2vw;
       font-size: 2vw;
       font-family: Montserrat;
-      padding: 2rem 0;
-    }
-
-    @media screen and (min-width: 1440px) {
-      height: 9vh;
     }
   }
 
   .container {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
     @media screen and (min-width: 1440px) {
       max-width: 100%;
     }
