@@ -6,6 +6,7 @@ export const CardImg = styled.div`
   @media screen and (min-width: 768px) {
     height: 100%;
     width: 100%;
+    overflow: hidden;
   }
 
   h1 {
@@ -51,7 +52,7 @@ export const CardImg = styled.div`
   .arrow-left,
   .arrow-right {
     width: 40px;
-    height: 40px;
+    height: 60px;
     position: absolute;
     margin: 0;
     font-size: 3rem;
@@ -63,23 +64,47 @@ export const CardImg = styled.div`
     justify-content: center;
 
     background-color: #fff;
-    color: #000;
-    opacity: 0.5;
+    color: rgba(0, 0, 0, 0.8);
+    opacity: 0.6;
 
     padding: 0;
 
     &:hover {
       background-color: #fff;
-      color: #000;
+      color: rgba(0, 0, 0, 0.8);
     }
   }
 
   .arrow-left {
-    left: 2vh;
+    left: 3vh;
+    @media screen and (min-width: 768px) {
+      left: 20vh;
+    }
+    @media screen and (min-width: 1024px) {
+      left: 27vh;
+    }
+    @media screen and (min-width: 1440px) {
+      left: 43vh;
+    }
+    @media screen and (min-width: 2560px) {
+      left: 42vh;
+    }
   }
 
   .arrow-right {
-    right: 2vh;
+    right: 3vh;
+    @media screen and (min-width: 768px) {
+      right: 20vh;
+    }
+    @media screen and (min-width: 1024px) {
+      right: 27vh;
+    }
+    @media screen and (min-width: 1440px) {
+      right: 43vh;
+    }
+    @media screen and (min-width: 2560px) {
+      right: 42vh;
+    }
   }
 
   .gallery {
@@ -98,13 +123,12 @@ export const CardImg = styled.div`
   }
 
   .item {
-    transition: all 400ms ease-in-out;
     opacity: 0.5;
 
     @media screen and (min-width: 768px) {
       display: initial;
       width: 20vw;
-      height: 20vh;
+      height: 30vh;
 
       position: absolute;
       top: 50%;
@@ -114,9 +138,11 @@ export const CardImg = styled.div`
 
   .left {
     display: none;
+
     @media screen and (min-width: 768px) {
       display: initial;
-      left: 1vw;
+      left: -10vw;
+      object-fit: cover;
     }
   }
 
@@ -124,7 +150,8 @@ export const CardImg = styled.div`
     display: none;
     @media screen and (min-width: 768px) {
       display: initial;
-      right: 1vw;
+      right: -10vw;
+      object-fit: cover;
     }
   }
 
@@ -184,7 +211,7 @@ export const CardImg = styled.div`
 
   .card {
     width: 85vw;
-    height: 16rem;
+    height: 13rem;
 
     display: flex;
     flex-direction: column;
@@ -197,14 +224,12 @@ export const CardImg = styled.div`
 
     @media screen and (min-width: 768px) {
       width: 73.5vw;
-      height: 20vh;
+      height: 15vh;
       bottom: 0%;
     }
 
     @media screen and (min-width: 1440px) {
       width: 80vw;
-      height: 25vh;
-      bottom: -10vh;
     }
   }
 
@@ -213,6 +238,7 @@ export const CardImg = styled.div`
     height: 100%;
 
     margin: 0 auto;
+    padding: 0 10%;
 
     display: flex;
     flex-direction: column;
@@ -229,6 +255,19 @@ export const CardImg = styled.div`
 
     @media screen and (min-width: 768px) {
       width: 55%;
+      flex-direction: row;
+      padding: 0 2%;
+      .h5 {
+        font-size: 2.7vh;
+      }
+      p {
+        font-size: 1.25vh;
+        margin-top: 1vh;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 35%;
     }
 
     button {
@@ -236,6 +275,12 @@ export const CardImg = styled.div`
       font,
       p {
         color: #fff;
+      }
+      @media screen and (min-width: 768px) {
+        width: 13vw;
+        font {
+          font-size: 1.25vw;
+        }
       }
     }
   }
