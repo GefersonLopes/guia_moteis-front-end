@@ -81,6 +81,9 @@ export const CardMotel_Bootstrap = styled.div`
       }
     }
   }
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const DivCentered = styled.div`

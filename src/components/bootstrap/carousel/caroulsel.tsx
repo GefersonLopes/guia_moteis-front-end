@@ -11,9 +11,12 @@ import image1 from '../../../img/suites/image1.svg';
 import image2 from '../../../img/suites/image2.svg';
 import image3 from '../../../img/suites/image3.svg';
 import { CardImg } from './styled';
+import { ContextLogic } from '../../../context/Provider';
 
 export const SuitesCarousel = () => {
   const { next, prev } = useContext(Context);
+  const { noRouter, linkMotel } = useContext(ContextLogic);
+
   return (
     <CardImg>
       <h1>Nossas suítes</h1>
@@ -41,9 +44,13 @@ export const SuitesCarousel = () => {
                     <Card.Title>Suíte Cristal</Card.Title>
                     <Card.Text>A partir de R$ 164,00</Card.Text>
                   </div>
-                  <Button variant="primary">Saiba mais</Button>
+                  <a target="_blank" href={linkMotel}>
+                    <Button>Saiba mais</Button>
+                  </a>
                 </Card.Body>
-                <p className="ver">Ver todas as suítes</p>
+                <p className="ver" onClick={() => noRouter()}>
+                  Ver todas as suítes
+                </p>
               </Card>
             </div>
             <img src={image1} alt="" className="item left" />
