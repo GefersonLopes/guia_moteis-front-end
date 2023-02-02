@@ -10,7 +10,7 @@ import { Div } from './styled';
 export const Container_Main = () => {
   return (
     <Div>
-      <Card>
+      <Card data-aos="zoom-in">
         <Card.Body>
           <Card.Text>Bem vindo ao</Card.Text>
           <Card.Title>Vison Motel</Card.Title>

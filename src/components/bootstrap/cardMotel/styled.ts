@@ -7,6 +7,7 @@ export const CardMotel_Bootstrap = styled.div`
   font-family: Playfair;
   font-weight: bold;
   gap: 1.5rem;
+  overflow: hidden;
 
   h1 {
     font-size: 2.25rem;
@@ -29,6 +30,7 @@ export const CardMotel_Bootstrap = styled.div`
     background-color: #fff;
     padding: 5rem 1rem;
     margin-top: -3rem;
+    z-index: 2;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
 
     @media screen and (min-width: 768px) {

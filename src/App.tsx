@@ -3,8 +3,11 @@ import { RouteInPage } from './routes/routes';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  Aos.init({ duration: 2000 });
   return (
     <>
       <RouteInPage />

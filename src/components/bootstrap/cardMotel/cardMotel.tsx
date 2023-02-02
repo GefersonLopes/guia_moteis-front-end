@@ -15,7 +15,7 @@ export const CardMotel = () => {
   return (
     <DivCentered>
       <CardMotel_Bootstrap>
-        <div>
+        <div data-aos="fade-right">
           <h1>O Motel</h1>
           <p>
             O Vison Motel está localizado na Zona Industrial Norte, em Joinville
@@ -37,7 +37,7 @@ export const CardMotel = () => {
           </a>
         </div>
 
-        <a>
+        <a data-aos="fade-left">
           <img id="imgMotel" src={motel} alt="motel" />
         </a>
       </CardMotel_Bootstrap>

@@ -17,25 +17,45 @@ export const CardContato = () => {
   return (
     <MainContato>
       <div className="groupLogo">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" data-aos="flip-left" />
         <span>
           Rua SPMS, Conj./Lote 175/225 - Núcleo <br /> Bandeirante - Brasília -
           DF
         </span>
       </div>
       <div className="groupButtons">
-        <Navbar.Brand className="a-brand" href="#suites">
+        <Navbar.Brand
+          data-aos="fade-right"
+          data-aos-easing="ease-in-sine"
+          className="a-brand"
+          href="#suites"
+        >
           <Button variant="primary">Revervas</Button>
         </Navbar.Brand>
-        <Navbar.Brand className="a-brand" href="#suites">
+        <Navbar.Brand
+          data-aos="fade-right"
+          data-aos-easing="ease-in-sine"
+          className="a-brand"
+          href="#suites"
+        >
           <Button variant="primary">Ver suites</Button>
         </Navbar.Brand>
-        <Navbar.Brand className="a-brand" onClick={() => noRouter()}>
+        <Navbar.Brand
+          data-aos="fade-left"
+          data-aos-easing="ease-in-sine"
+          className="a-brand"
+          onClick={() => noRouter()}
+        >
           <Button variant="outline-primary" className="outline-primary">
             Whatsapp
           </Button>
         </Navbar.Brand>
-        <Navbar.Brand className="a-brand" href="#contato">
+        <Navbar.Brand
+          data-aos="fade-left"
+          data-aos-easing="ease-in-sine"
+          className="a-brand"
+          href="#contato"
+        >
           <Button variant="outline-primary" className="outline-primary">
             Contato
           </Button>

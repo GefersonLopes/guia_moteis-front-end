@@ -57,6 +57,7 @@ export const MainContato = styled.main`
     height: 20rem;
 
     margin: 5vh 0;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;

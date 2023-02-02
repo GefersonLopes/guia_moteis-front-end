@@ -61,7 +61,7 @@ export const CardImg = styled.div`
     margin: 0;
     font-size: 3rem;
     font-weight: 300;
-    z-index: 3;
+    z-index: 4;
 
     display: flex;
     align-items: center;
@@ -277,14 +277,17 @@ export const CardImg = styled.div`
 
   button {
     width: 80%;
-    font,
-    p {
-      color: #fff;
-    }
+
     @media screen and (min-width: 768px) {
       width: 10vw;
       height: 4vh;
       font-size: 0.85vw;
+    }
+  }
+
+  .buttonMais {
+    font {
+      color: #fff;
     }
   }
 `;
