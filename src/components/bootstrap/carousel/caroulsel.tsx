@@ -20,7 +20,11 @@ export const SuitesCarousel = () => {
   return (
     <CardImg>
       <h1>Nossas suítes</h1>
-      <div className="container">
+      <div
+        className="container"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+      >
         <div className="gallery-wrapper">
           <div className="gallery">
             <button
@@ -38,14 +42,14 @@ export const SuitesCarousel = () => {
               &gt;
             </button>
             <div className="cardInfo">
-              <Card className="text-center">
+              <Card className="text-center" data-aos="zoom-in-up">
                 <Card.Body>
                   <div>
                     <Card.Title>Suíte Cristal</Card.Title>
                     <Card.Text>A partir de R$ 164,00</Card.Text>
                   </div>
                   <a target="_blank" href={linkMotel}>
-                    <Button>Saiba mais</Button>
+                    <Button className="buttonMais">Saiba mais</Button>
                   </a>
                 </Card.Body>
                 <p className="ver" onClick={() => noRouter()}>

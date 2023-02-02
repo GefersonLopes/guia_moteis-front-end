@@ -7,7 +7,7 @@ import { ICardCortesias } from '../../../interfaces/interfaces';
 export const CardCortesia = ({ img, title, description }: ICardCortesias) => {
   return (
     <li>
-      <Card>
+      <Card data-aos="zoom-in">
         <Card.Img variant="top" src={img} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>

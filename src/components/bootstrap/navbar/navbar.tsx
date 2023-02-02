@@ -19,8 +19,14 @@ export const Navbar_Bootstrap = () => {
 
   return (
     <Header>
-      <Navbar>
-        <img src={logo} alt="logo" onClick={() => navigate('/')} />
+      <Navbar data-aos="fade-down">
+        <img
+          data-aos="flip-left"
+          data-aos-duration="3000"
+          src={logo}
+          alt="logo"
+          onClick={() => navigate('/')}
+        />
         <Container>
           <Navbar.Brand href="#pageHome">Início</Navbar.Brand>
           <Navbar.Brand href="#suites">Suítes</Navbar.Brand>

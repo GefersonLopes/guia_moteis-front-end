@@ -14,7 +14,7 @@ export const CardLocalizacao = () => {
   const { tracarRota } = useContext(ContextLogic);
   return (
     <MainLocalizacao>
-      <Card>
+      <Card data-aos="fade-right" data-aos-easing="ease-in-sine">
         <Card.Img variant="top" src={mapa} />
         <Card.Body>
           <Card.Title>Localização</Card.Title>
