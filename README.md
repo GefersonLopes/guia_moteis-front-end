@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+# Olá, seja bem Vindo ao README Principal do projeto!!!
+GEFERSON ALMEIDA LOPES
+GMAIL -> gefersonjefreey@gmail.com
+LINKEDIN -> [https://www.linkedin.com/in/algeferson/]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto possui uma rota inicial que fala um pouco sobre mim 
+que nada mais é do que uma curta apresentação simples, mas se não tiver interesse,
+é só clicar no botão que será direcionado para a minha aplicação ;)
 
-## Available Scripts
 
-In the project directory, you can run:
+# QUAL É O LINK DO DEPLOY?
 
-### `npm start`
+Este é o link direto para a aplicação [https://guia-moteis-front-end.vercel.app/dashboard]
+Caso tenha interesse em visualizar a página de introdução, é só remover o nome ``/dashboard`` da url.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# QUAL O LINK DA APRESENTAÇÃO DO VÍDEO DO YOUTUBE?
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Gravei um vídeo explicativo da minha aplicação como está funcionando porque sei que poucará um pouco do seu tempo,
+mas tá bem bacana, dá pra entender um pouco do projeto realizado.
 
-### `npm test`
+Link do vídeo: [https://youtu.be/luffsWBQ1vo]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# COMO RODAR A APLICAÇÃO FRONT END? 
 
-### `npm run build`
+Para rodar o projeto e verificar como cada coisa se comporta é só executar o comando `yarn start ou npm start` que logo em seguida será aberta uma página no localhost de sua máquina ;)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+LEMBRANDO QUE ANTES DESSE PROCESSO DEVE SER INSTALADA AS DEPENDÊNCIAS 
+COM O COMANDO `yarn ou npm intall`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Bom, acho que é só isso ;)
+Precisando de algo mais, só entrar em contato comigo pelo linkedin ou email, mas se preferirem... whatsapp => `(71) 9 96063783`
