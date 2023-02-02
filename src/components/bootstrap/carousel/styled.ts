@@ -273,20 +273,18 @@ export const CardImg = styled.div`
     @media screen and (min-width: 1440px) {
       width: 35%;
     }
+  }
 
-    button {
-      width: 80%;
-      font,
-      p {
-        color: #fff;
-      }
-      @media screen and (min-width: 768px) {
-        width: 10vw;
-        height: 4vh;
-        font {
-          font-size: 0.85vw;
-        }
-      }
+  button {
+    width: 80%;
+    font,
+    p {
+      color: #fff;
+    }
+    @media screen and (min-width: 768px) {
+      width: 10vw;
+      height: 4vh;
+      font-size: 0.85vw;
     }
   }
 `;
