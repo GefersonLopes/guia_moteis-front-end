@@ -9,78 +9,30 @@ export const Context = createContext({} as GlobalInterfaceContext);
 
 export const ContextProvider = ({ children }: INode) => {
   const navigate = useNavigate();
-  const [currentItem, setCurrentItem] = useState(2);
+  const [currentItem, setCurrentItem] = useState(0);
+  const items = document.querySelectorAll('.item');
+
+  const handleCurrentItem = (step: number) => {
+    setCurrentItem((currentItem + step + 3) % 3);
+  };
+
+  const handleClassList = () => {
+    items.forEach((item) => {
+      item.classList.remove('current-item', 'center-item', 'left', 'right');
+    });
+    items[currentItem].classList.add('current-item', 'center-item');
+    items[(currentItem + 1) % 3].classList.add('left');
+    items[(currentItem + 2) % 3].classList.add('right');
+  };
 
   const next = () => {
-    const items = document.querySelectorAll('.item');
-
-    setCurrentItem(currentItem + 1);
-
-    if (currentItem >= 2) {
-      setCurrentItem(0);
-    }
-
-    items.forEach((item) => {
-      item.classList.remove('current-item');
-      item.classList.remove('current-item');
-      item.classList.remove('center-item');
-      item.classList.remove('left');
-      item.classList.remove('right');
-    });
-
-    items[currentItem].classList.add('current-item');
-    items[currentItem].classList.add('center-item');
-
-    console.log(items);
-
-    if (currentItem == 0) {
-      items[currentItem + 1].classList.add('left');
-      items[currentItem + 2].classList.add('right');
-    }
-
-    if (currentItem == 1) {
-      items[currentItem - 1].classList.add('left');
-      items[currentItem + 1].classList.add('right');
-    }
-
-    if (currentItem == 2) {
-      items[currentItem - 2].classList.add('left');
-      items[currentItem - 1].classList.add('right');
-    }
+    handleCurrentItem(1);
+    handleClassList();
   };
 
   const prev = () => {
-    const items = document.querySelectorAll('.item');
-
-    setCurrentItem(currentItem - 1);
-
-    if (currentItem <= 0) {
-      setCurrentItem(2);
-    }
-
-    items.forEach((item) => {
-      item.classList.remove('current-item');
-      item.classList.remove('center-item');
-      item.classList.remove('left');
-      item.classList.remove('right');
-    });
-
-    items[currentItem].classList.add('current-item');
-
-    if (currentItem == 0) {
-      items[currentItem + 1].classList.add('left');
-      items[currentItem + 2].classList.add('right');
-    }
-
-    if (currentItem == 1) {
-      items[currentItem - 1].classList.add('left');
-      items[currentItem + 1].classList.add('right');
-    }
-
-    if (currentItem == 2) {
-      items[currentItem - 2].classList.add('left');
-      items[currentItem - 1].classList.add('right');
-    }
+    handleCurrentItem(-1);
+    handleClassList();
   };
 
   return (

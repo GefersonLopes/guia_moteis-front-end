@@ -133,5 +133,8 @@ export const Center = styled.div`
 
   ul {
     padding: 0;
+    @media screen and (max-width: 768px) {
+      margin: 0 auto;
+    }
   }
 `;
